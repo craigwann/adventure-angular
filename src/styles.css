@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.card {
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card p {
+  margin-bottom: 1px;
+}
+
+.card p:last-of-type {
+  margin-bottom: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}

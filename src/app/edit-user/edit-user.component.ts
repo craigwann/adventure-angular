@@ -35,4 +35,10 @@ export class EditUserComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  deleteUser() {
+    let userInFirebase = this.userService.getUserById(this.userId);
+    userInFirebase.remove();
+    this.router.navigate(['']);
+  }
+
 }
