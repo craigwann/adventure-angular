@@ -1,0 +1,10 @@
+<h2>Adventure Game Users</h2>
+
+<div *ngFor="let user of users | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3>{{user.name}}</h3>
+    <h3>{{user.characteristicOne}}</h3>
+    <h3>{{user.characteristicTwo}}</h3>
+    <h3>{{user.points}}</h3>
+  </div>
+</div>
