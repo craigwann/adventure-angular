@@ -15,4 +15,12 @@ export class UserService {
     return this.users;
   }
 
+  getUserById(userId: string) {
+    return this.database.object('users/' + userId);
+  }
+
+  updateDatabase(newUser: User){
+    this.users.push(newUser);
+  }
+
 }
